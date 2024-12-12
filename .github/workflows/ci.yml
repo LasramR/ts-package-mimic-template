@@ -1,0 +1,36 @@
+name: "Continuous Integration"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        shell: bash
+        run: npm install
+      - name: Check format
+        shell: bash
+        run: npm run check
+      - name: Run tests
+        shell: bash
+        run: npm run test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install production dependencies
+        shell: bash
+        run: npm install --omit=dev
+      - name: Install building tools
+        shell: bash
+        run: npm install -g typescript tsc-alias
+      - name: Build project
+        shell: bash
+        run: npm run build

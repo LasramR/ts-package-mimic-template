@@ -1,0 +1,31 @@
+{
+  "name": "ts-standalone-app-template",
+  "version": "0.0.1",
+  "author": "LasramR",
+  "description": "App template for framework-less TypeScript apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "check": "biome check && tsc --noEmit ",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "lint": "biome lint --fix",
+    "format": "biome check --linter-enabled=false --formatter-enabled=true --organize-imports-enabled=true --write",
+    "clean": "del-cli -f dist/",
+    "dev": "tsx watch src",
+    "test": "vitest -c ./vitest.config.ts",
+    "prepare": "husky"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@faker-js/faker": "^9.3.0",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "del-cli": "^6.0.0",
+    "husky": "^9.1.7",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,6 @@
+npm run check || { 
+  echo "\033[31mnpm run check script failed!\033[0m"; 
+  echo "Perhaps your code hasn't been formatted by \033[34mbiome\033[0m, try running \"\033[32mnpm run format\033[0m\", then commit again.";
+  echo "Perhaps \033[34mtsc\033[0m failed to type-check your code. If so, good luck."; 
+  exit 1;
+}

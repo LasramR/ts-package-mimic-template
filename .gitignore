@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+
+# Environment variable files
+!.env.example
+.env*
+
+# Dist
+dist/
+
+# Cache
+.cache
+
+# IDE
+.vscode/
+.idea/

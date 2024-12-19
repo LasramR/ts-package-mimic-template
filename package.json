@@ -1,8 +1,8 @@
 {
-  "name": "ts-standalone-app-template",
+  "name": "{{ package_name }}",
   "version": "0.0.1",
-  "author": "LasramR",
-  "description": "App template for framework-less TypeScript apps",
+  "author": "{{ package_author }}",
+  "description": "{{ package_description }}",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",

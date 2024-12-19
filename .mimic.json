@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LasramR/mimic/refs/heads/main/.mimic.schema.json",
+  "git": {
+    "enabled": true,
+    "main_branch": "main"
+  },
+  "template": {
+    "variables": {
+      "package_name": {
+        "required": true,
+        "type": "regex",
+        "item": "^(?:@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*$",
+        "description": "package.json \"name\" property"
+      },
+      "package_author": {
+        "required": true,
+        "type": "string",
+        "description": "package.json \"author\" property"
+      },
+      "package_description": {
+        "required": false,
+        "type": "string",
+        "description": "package.json \"description\" property"
+      }
+    }
+  },
+  "hooks": [
+    {
+      "name": "Installing dependencies",
+      "ignore_user_skip": true,
+      "when": "post_template_injection",
+      "steps": ["npm i", "npx husky"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "{{ package_name }}",
-  "version": "0.0.1",
+  "version": "{{ package_version }}",
   "author": "{{ package_author }}",
   "description": "{{ package_description }}",
   "main": "index.js",

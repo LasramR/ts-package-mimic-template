@@ -1,6 +1,6 @@
-# ts-standalone-app-template
+# ts-standalone-app-mimic-template
 
-TypeScript template for framework-less applications.
+Mimic template for TypeScript framework-less applications.
 
 ## Features
 
@@ -17,5 +17,5 @@ TypeScript template for framework-less applications.
 You can clone this template and automatically generate a ready to use folder structure by using [mimic](https://github.com/LasramR/mimic):
 
 ```bash
-mimic clone https://github.com/LasramR/ts-standalone-app-template.git [<destination>]
+mimic clone https://github.com/LasramR/ts-standalone-app-mimic-template.git [<destination>]
 ```

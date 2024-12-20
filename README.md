@@ -1,6 +1,6 @@
 # ts-package-mimic-template
 
-Mimic template for TypeScript framework-less applications.
+Mimic template for TypeScript package.
 
 ## Features
 

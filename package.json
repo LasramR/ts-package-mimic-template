@@ -11,7 +11,8 @@
     "format": "biome check --linter-enabled=false --formatter-enabled=true --organize-imports-enabled=true --write",
     "clean": "del-cli -f dist/",
     "dev": "tsx watch src",
-    "test": "vitest -c ./vitest.config.ts"
+    "test": "vitest -c ./vitest.config.ts",
+    "prepare": "husky || true"
   },
   "license": "ISC",
   "devDependencies": {

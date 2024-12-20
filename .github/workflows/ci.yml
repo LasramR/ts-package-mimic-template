@@ -25,12 +25,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Install production dependencies
+      - name: Install dependencies
         shell: bash
-        run: npm install --omit=dev
-      - name: Install building tools
-        shell: bash
-        run: npm install -g typescript vite vite-plugin-dts
+        run: npm install
       - name: Build project
         shell: bash
         run: npm run build

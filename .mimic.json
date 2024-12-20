@@ -5,6 +5,7 @@
     "main_branch": "main"
   },
   "template": {
+    "ignorePatterns": [".git", ".git/**", "node_modules", "node_modules/**"],
     "variables": {
       "package_name": {
         "required": true,

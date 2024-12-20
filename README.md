@@ -1,4 +1,4 @@
-# ts-standalone-app-mimic-template
+# ts-package-mimic-template
 
 Mimic template for TypeScript framework-less applications.
 
@@ -7,7 +7,7 @@ Mimic template for TypeScript framework-less applications.
 * Linter/Formatter with [Biome](https://biomejs.dev/)
 * Unit testing with [Vitest](https://vitest.dev/)
 * Hot reloading with [Tsx](https://github.com/privatenumber/tsx)
-* Dev container
+* Building to different target with [Vite](https://vite.dev/)
 * Preconfigured git pre-commit hook with [Husky](https://github.com/typicode/husky)
 * Preconfigured CI with GitHub Action
 * Preconfigured package.json commands
@@ -17,5 +17,5 @@ Mimic template for TypeScript framework-less applications.
 You can clone this template and automatically generate a ready to use folder structure by using [mimic](https://github.com/LasramR/mimic):
 
 ```bash
-mimic clone https://github.com/LasramR/ts-standalone-app-mimic-template.git [<destination>]
+mimic clone https://github.com/LasramR/ts-package-mimic-template.git [<destination>]
 ```

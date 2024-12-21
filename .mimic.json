@@ -37,7 +37,7 @@
       "name": "Installing dependencies",
       "ignore_user_skip": true,
       "when": "post_template_injection",
-      "steps": ["npm i", "npx husky"]
+      "steps": ["npm i"]
     }
   ]
 }

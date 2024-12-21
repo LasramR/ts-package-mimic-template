@@ -12,7 +12,7 @@
     "clean": "del-cli -f dist/",
     "dev": "tsx watch src",
     "test": "vitest -c ./vitest.config.ts",
-    "prepare": "husky || true"
+    "prepare": "husky || exit 0"
   },
   "license": "ISC",
   "devDependencies": {
